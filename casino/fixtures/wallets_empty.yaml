@@ -1,0 +1,10 @@
+-   model: casino.wallet
+    pk: 1
+    fields: {amount: '0.00', currency: BNS, wagering_requirement: 1, customer: 1,
+        created: ! '2016-10-26 20:55:17', spent_money_on_start: '123.45',
+        depleted: true}
+-   model: casino.wallet
+    pk: 2
+    fields: {amount: '0.00', currency: BNS, wagering_requirement: 1, customer: 1,
+        created: ! '2016-10-26 20:55:34', spent_money_on_start: '123.45',
+        depleted: true}

@@ -1,0 +1,9 @@
+coverage==4.2
+Django==1.10.2
+django-bootstrap3==7.1.0
+django-extensions==1.7.4
+django-tables2==1.2.6
+nose-parameterized==0.5.0
+PyYAML==3.12
+six==1.10.0
+Werkzeug==0.11.11

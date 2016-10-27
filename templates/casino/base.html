@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% load render_table from django_tables2 %}
+
+{% block heading %}{% endblock heading %}
+{% block content %}
+    <div class="page-header">
+        <h1>{% block h1 %}{% endblock h1 %}</h1>
+        <p class="lead">{% block lead %}{% endblock lead %}</p>
+    </div>
+    {% render_table wallets %}
+
+    <h2>{% block h2 %}{% endblock h2 %}</h2>
+    {% bootstrap_messages %}
+    <form action="{{ app_path }}" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {% block submit_label %}{% endblock submit_label %}
+        </button>
+        {% endbuttons %}
+    </form>
+{% endblock content %}

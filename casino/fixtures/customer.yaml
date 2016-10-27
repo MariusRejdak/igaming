@@ -1,0 +1,3 @@
+-   model: casino.customer
+    pk: 1
+    fields: {user: 1, overall_spent_money: '123.45'}

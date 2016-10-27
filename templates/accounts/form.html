@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <form action="{{ app_path }}" method="post" class="form-signin">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {% bootstrap_icon "log-in" %} Submit
+        </button>
+        {% endbuttons %}
+    </form>
+{% endblock content %}

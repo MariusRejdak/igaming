@@ -1,0 +1,9 @@
+-   model: auth.user
+    pk: 1
+    fields:
+        password: pbkdf2_sha256$30000$tBeac66ZniOF$r4tgurztXHoC5dLuKqefPjPGyFJjReFtDpiVqjIaWIs=
+        is_superuser: false
+        username: test
+        email: 'test@example.com'
+        is_staff: false
+        is_active: true

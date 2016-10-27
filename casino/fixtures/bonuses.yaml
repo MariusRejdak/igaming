@@ -1,0 +1,8 @@
+-   model: casino.bonus
+    pk: 1
+    fields: {amount: '10.00', currency: BNS, wagering_requirement: 1, action: deposit,
+        min_amount: '10.00'}
+-   model: casino.bonus
+    pk: 2
+    fields: {amount: '10.00', currency: EUR, wagering_requirement: 0, action: login,
+        min_amount: '0.00'}
